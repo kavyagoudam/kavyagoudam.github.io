@@ -1,795 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Chaitra Boggaram</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
 
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
+<head>
+    <meta charset="utf-8">
+    <title>Chaitra Boggaram</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
-        <!-- Google Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-        <!-- CSS Libraries -->
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
 
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <body data-spy="scroll" data-target=".navbar" data-offset="51">
-        <!-- Nav Bar Start -->
-        <div class="navbar navbar-expand-lg bg-light navbar-light">
-            <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">DevFolio</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto">
-                        <a href="#home" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="#service" class="nav-item nav-link">Service</a>
-                        <a href="#experience" class="nav-item nav-link">Experience</a>
-                        <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                        <a href="#blog" class="nav-item nav-link">Blog</a>
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Chaitra</span>Boggaram</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#resume" class="nav-item nav-link">Resume</a>
+                <a href="#skill" class="nav-item nav-link">Skills</a>
+                <a href="#projects" class="nav-item nav-link">Projects</a>
+                <a href="#activities" class="nav-item nav-link">Activities</a>
+            </div>
+            <a href="Resume_Chaitra_Boggaram.pdf" target="_blank" class="btn btn-outline-primary d-none d-lg-block">Download Resume</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Nav Bar End -->
+    </div>
+    <!-- Video Modal End -->
 
 
-        <!-- Hero Start -->
-        <div class="hero" id="home">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="hero-content">
-                            <div class="hero-text">
-                                <p>I'm</p>
-                                <h1>Chaitra Boggaram</h1>
-                                <h2></h2>
-                                <div class="typed-text">Full Stack Developer, Cloud Engineer, Web Developer, Front End Developer, Back End Designer</div>
-                            </div>
-                            <div class="hero-btn">
-                                <a class="btn" href="">Resume</a>
-                                <a class="btn" href="cboggaram@scu.edu">Contact Me</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 d-none d-md-block">
-                        <div class="hero-image">
-                            <img src="img/hero.png" alt="Hero Image">
-                        </div>
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/chaitra.png" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Chaitra Boggaram</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Software Engineer, Full Stack Developer, Cloud Engineer, Web Developer</div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="Resume_Chaitra_Boggaram.pdf" target="_blank" class="btn btn-outline-light mr-5">Download Resume</a>
+                        <!-- <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                            <span></span>
+                        </button> -->
+                        <!-- <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Play Video</h5> -->
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Hero End -->
+    </div>
+    <!-- Header End -->
 
 
-        <!-- About Start -->
-        <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="about-img">
-                            <img src="img/about.jpg" alt="Image">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="about-content">
-                            <div class="section-header text-left">
-                                <p>Learn About Me</p>
-                                <h2>5 Years Experience</h2>
-                            </div>
-                            <div class="about-text">
-                                <p>
-                                    I am a skilled systems engineer with experience in automation, cloud computing, data management, and software development. I have a strong technical background in programming languages such as Python, Java, C and JavaScript, as well as experience with popular tools and platforms like AWS, Azure and Splunk. I have completed several projects, including developing plagiarism detector, food donation platform, and referral website. I have also led successful projects in data automation, endpoint security, and threat protection. I am excited to bring my skills and experience to a new challenge and contribute to your organization's success.
-                                </p>
-                            </div>
-                            <div class="skills">
-                                <div class="skill-name">
-                                    <p>Web Design</p><p>85%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Web Development</p><p>95%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Apps Design</p><p>90%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-name">
-                                    <p>Apps Development</p><p>85%</p>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                            <a class="btn" href="">Learn More</a>
-                        </div>
-                    </div>
-                </div>
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
             </div>
-        </div>
-        <!-- About End -->
-        
-        
-        <!-- Service Start -->
-        <div class="service" id="service">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>What I do</p>
-                    <h2>Awesome Quality Services</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/chaitra.jpg" alt="">
                 </div>
-                <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fa fa-laptop"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Web Design</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fa fa-laptop-code"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Web Development</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fab fa-android"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Apps Design</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fab fa-apple"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Apps Development</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Service End -->
-        
-        
-         <!-- Experience Start -->
-        <div class="experience" id="experience">
-            <div class="container">
-                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Resume</p>
-                    <h2>Working Experience</h2>
-                </header>
-                <div class="timeline">
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Job Experience End -->
-        
-        
-        <!-- Banner Start -->
-        <div class="banner wow zoomIn" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="section-header text-center">
-                    <p>Reasonable Price</p>
-                    <h2>Get A <span>Special</span> Price</h2>
-                </div>
-                <div class="container banner-text">
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Software & Cloud Engineer</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. 
+                        Hello Everyone!
                     </p>
-                    <a class="btn">Pricing Plan</a>
-                </div>
-            </div>
-        </div>
-        <!-- Banner End -->
-
-
-        <!-- Portfolio Start -->
-        <div class="portfolio" id="portfolio">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Portfolio</p>
-                    <h2>My Excellent Portfolio</h2>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <ul id="portfolio-filter">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-1">Web Design</li>
-                            <li data-filter=".filter-2">Mobile Apps</li>
-                            <li data-filter=".filter-3">Game Dev</li>
+                    <p>
+                        I am a Computer Science and Engineering Graduate Student at <b>Santa Clara University, California</b>.
+                    </p>
+                    <p>
+                        I am a skilled software engineer with experience in automation, cloud computing, data management, and software development. I have a strong technical background in programming languages such as Python, Java, C and JavaScript, as well as experience with popular tools and platforms like AWS, Azure and Splunk.
+                    </p>
+                    <p>
+                        I have completed several projects, including developing plagiarism detector for ChatGPT, food donation platform, and job referral website. I have also led successful projects in data automation, endpoint security, and threat protection. I am excited to bring my skills and experience to a new challenge and contribute to your organization's success.
+                    </p>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6><b>Email: </b><span class="text-secondary"><a href="mailto: cboggaram@scu.edu" target="_blank" rel="noopener noreferrer">cboggaram@scu.edu</a></span></h6></div>
+                        <div class="col-sm-6 py-2"><h6><b>Degree: </b><span class="text-secondary">Master of Science</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6><b>City: </b><span class="text-secondary">Santa Clara, CA, USA</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6><b>Major: </b><span class="text-secondary">Computer Science and Engineering</span></h6></div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2"><h6><b>Domains</b></h6>
+                        <ul>
+                            <li>Web Development</li>
+                            <li>Python Development</li>                            
                         </ul>
-                    </div>
-                </div>
-                <div class="row portfolio-container">
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-1.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>eCommerce Website</h3>
-                                <a class="btn" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</a>
-                            </div>
                         </div>
+                        <div class="col-sm-6 py-2"><h6><b><br></b></h6>
+                            <ul>
+                                <li>Cloud computing</li>
+                                <li>Network Security</li>
+                            </ul>
+                            </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-2.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Product Landing Page</h3>
-                                <a class="btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-3.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>JavaScript quiz game</h3>
-                                <a class="btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-4.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>JavaScript drawing</h3>
-                                <a class="btn" href="img/portfolio-4.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-5.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Social Mobile Apps</h3>
-                                <a class="btn" href="img/portfolio-5.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-6.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Company Website</h3>
-                                <a class="btn" href="img/portfolio-6.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
+
+                    <div class="d-flex justify-content-center mb-4">
+                        <a class="btn btn-dark btn-social mr-2" href="https://www.linkedin.com/in/chaitraboggaram/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-dark btn-social mr-2" href="https://github.com/chaitraboggaram/"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-dark btn-social mr-2" href="https://twitter.com/BoggaramChaitra"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mr-2" href="https://www.instagram.com/ipadhu/"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mr-2" href="https://www.youtube.com/@ipadhu"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio End -->
-        
-        
-        <!-- Banner Start -->
-        <div class="banner wow zoomIn" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="section-header text-center">
-                    <p>Awesome Discount</p>
-                    <h2>Get <span>30%</span> Discount</h2>
-                </div>
-                <div class="container banner-text">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. 
-                    </p>
-                    <a class="btn">Order Now</a>
-                </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Resume Start -->
+    <div class="container-fluid py-5" id="resume">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Resume</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Resume</h1>
             </div>
-        </div>
-        <!-- Banner End -->
-        
-        
-        <!-- Price Start -->
-        <div class="price" id="price">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>Pricing Plan</p>
-                    <h2>Affordable Price</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="price-item">
-                            <div class="price-header">
-                                <div class="price-title">
-                                    <h2>Basic</h2>
-                                </div>
-                                <div class="price-prices">
-                                    <h2><small>$</small>49<span>/ mo</span></h2>
-                                </div>
-                            </div>
-                            <div class="price-body">
-                                <div class="price-description">
-                                    <ul>
-                                        <li>Bootstrap 4</li>
-                                        <li>Font Awesome 5</li>
-                                        <li>Responsive Design</li>
-                                        <li>Browser Compatibility</li>
-                                        <li>Easy To Use</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="price-footer">
-                                <div class="price-action">
-                                    <a class="btn" href="">Order Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="price-item featured-item">
-                            <div class="price-header">
-                                <div class="price-title">
-                                    <h2>Standard</h2>
-                                </div>
-                                <div class="price-prices">
-                                    <h2><small>$</small>99<span>/ mo</span></h2>
-                                </div>
-                            </div>
-                            <div class="price-body">
-                                <div class="price-description">
-                                    <ul>
-                                        <li>Bootstrap 4</li>
-                                        <li>Font Awesome 5</li>
-                                        <li>Responsive Design</li>
-                                        <li>Browser Compatibility</li>
-                                        <li>Easy To Use</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="price-footer">
-                                <div class="price-action">
-                                    <a class="btn" href="">Order Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="price-item">
-                            <div class="price-header">
-                                <div class="price-title">
-                                    <h2>Premium</h2>
-                                </div>
-                                <div class="price-prices">
-                                    <h2><small>$</small>149<span>/ mo</span></h2>
-                                </div>
-                            </div>
-                            <div class="price-body">
-                                <div class="price-description">
-                                    <ul>
-                                        <li>Bootstrap 4</li>
-                                        <li>Font Awesome 5</li>
-                                        <li>Responsive Design</li>
-                                        <li>Browser Compatibility</li>
-                                        <li>Easy To Use</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="price-footer">
-                                <div class="price-action">
-                                    <a class="btn" href="">Order Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Price End -->
-        
-        
-        <!-- Testimonial Start -->
-        <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
-            <div class="container">
-                <div class="testimonial-icon">
-                    <i class="fa fa-quote-left"></i>
-                </div>
-                <div class="owl-carousel testimonials-carousel">
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-1.jpg" alt="Image">
-                        </div>
-                        <div class="testimonial-text">
-                            <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Objective</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <p class="mb-2">
+                                Seeking a challenging role as a Software Engineer where I can utilize my technical skills in programming languages such as Python, Java, and cloud computing platforms like AWS and Microsoft Azure, to design and develop innovative software solutions that solve complex business problems. I am always eager to learn and adapt to new technologies and methodologies that can further enhance my abilities and contribute to the success of the team.
                             </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
                         </div>
                     </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-2.jpg" alt="Image">
+                    <br>
+                    <h3 class="mb-4">Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Master of Science in Computer Science and Engineering</h5>
+                            <p class="mb-2"><strong><a href="https://www.scu.edu/" target="_blank">Santa Clara University, CA, USA</a></strong></p>
+                            <p> Sep 2022 - Jun 2024  |  GPA: 3.6/4</p>
                         </div>
-                        <div class="testimonial-text">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Bachelor of Computer Application</h5>
+                            <p class="mb-2"><strong><a href="https://www.ssmrv.edu.in/" target="_blank">Bangalore University, KA, India</a></strong></p>
+                            <p>June 2013 - May 2016  |  GPA: 3.55/4</p>
+                        </div>
+                    </div>
+                    <br>
+                    <h3 class="mb-4">Experience</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Teaching Assistant</h5>
+                            <p class="mb-2"><strong><a href="https://www.scu.edu/" target="_blank">Santa Clara University</a></strong> | <i>Jan 2023 - Present</i>
                             <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                                <ul>
+                                    <li>Automated CI/CD workflows for grading student assignments, resulting in consistent and objective grading, reduced manual grading time, and immediate feedback for students.</li>
+                                    <li>Conducted office hours to provide individualized support and guidance to students, addressing their queries and concerns to enhance their learning experience and support their academic success in the course.</li>
+                                </ul>
                             </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
                         </div>
                     </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-img">
-                            <img src="img/testimonial-3.jpg" alt="Image">
-                        </div>
-                        <div class="testimonial-text">
+                </div>
+                <div class="col-lg-6">
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Research Assistant</h5>
+                            <p class="mb-2"><strong><a href="https://www.scu.edu/" target="_blank">Santa Clara University</a></strong> | <i>Jan 2023 - Mar 2023</i>
                             <p>
-                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                                <ul>
+                                    <li>Implemented blockchain technology security and performance by implementing Proof of Work on SmartNICs with multi-threading, achieving ~15% higher throughput, and addressing scalability and energy consumption challenges.</li>
+                                    <li>Leveraged SmartNICs processing power and multi-threading at the network layer, written in C programming language, to enhance Proof of Work efficiency and reduce processing time for on-chain transactions.</li>
+                                </ul>
                             </p>
-                            <h3>Customer Name</h3>
-                            <h4>Profession</h4>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">System Engineer</h5>
+                            <p class="mb-2"><strong><a href="https://www.tcs.com/" target="_blank">Tata Consultancy Services</a></strong> | <i>Dec 2016 - Jun 2022</i></p>
+                            <p>
+                                <ul>
+                                    <li>Automated weekly reports for Endpoint Detection, Protection, and Response compliance using Macros and Power BI, resulting in time savings of ~10 hours per week, significantly improving client workflow and maintaining a 99% compliance rate.</li>
+                                    <li>Led a team of 4 in successful migration of 40,000 on-premises clients from Symantec Endpoint Protection to Microsoft Defender for Endpoint, cloud-based antivirus solution, decreasing support SLA by 2 business days.</li>
+                                    <li>Implemented automated email system through Power Automate to notify users of identified vulnerabilities on remote machines and provided clear guidance on necessary actions to resolve, resulting in 80% reduction in security threats.</li>
+                                    <li>Created Azure Monitor dashboard through Terraform CDK that provides real-time visibility into Active Directory information, used Log Analytics workspace and metrics for triggering alerts based on predefined thresholds reducing customer tickets by 25%.</li>
+                                    <li>Developed Python scripts using REST API to invoke Splunk search queries for identifying and blocking malicious URLs across multiple systems in NXP, reducing ~100 threats per week and provided real-time threat protection.</li>
+                                </ul>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Testimonial End -->
+    </div>
+    <!-- Resume End -->
 
 
-        <!-- Team Start -->
-        <div class="team" id="team">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Team</p>
-                    <h2>Expert Team Members</h2>
+    <!-- Skill Start -->
+    <div class="container-fluid py-5" id="skill">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Skills</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-sm"><a href="https://www.python.org/" target="_blank">
+                    <img style="height: 100px; width:100px" src="img/skills/python.png"></a>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-1.jpg" alt="Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Mollie Ross</h2>
-                                <h4>Web Designer</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
-                                </p>
-                                <div class="team-social">
-                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-sm"><a href="https://www.djangoproject.com/" target="_blank">
+                    <img style="height: 100px; width:100px" src="img/skills/django.png"></a>
+                </div>
+                <div class="col-sm"><a href="https://flask.palletsprojects.com/en/2.2.x/" target="_blank">
+                    <img style="height: 100px; width:80px" src="img/skills/flask.png"></a>
+                </div>
+                <div class="col-sm"><a href="https://react.dev/" target="_blank">
+                    <img style="height: 100px; width:100px" src="img/skills/react.png"></a>
+                </div>
+                <div class="col-sm"><a>
+                    <img style="height: 100px; width:100px" src="img/skills/html.png"></a>
+                </div>
+                <div class="col-sm"><a href="https://www.java.com/en/" target="_blank">
+                    <img style="height: 100px; width:100px" src="img/skills/java.png"></a>
+                </div>
+                <div class="col-sm"><a href="https://getbootstrap.com/" target="_blank">
+                    <img style="height: 100px; width:100px" src="img/skills/bootstrap.png"></a>
+                </div>
+                <div class="col-sm"><a href="https://scikit-learn.org/stable/" target="_blank">
+                    <img style="height: 100px; width:130px" src="img/skills/scikit_learn.png"></a>
+                </div>
+            </div>
+            <div class="row align-items-center mt-5">
+                <div class="col-sm"><a href="https://aws.amazon.com/" target="_blank">
+                    <img style="height: 80px; width:120px" src="img/skills/aws.png"></a>
+                </div>
+                <div class="col-sm"><a href="https://azure.microsoft.com/" target="_blank">
+                    <img style="height: 80px; width:120px" src="img/skills/azure.png"></a>
+                </div>
+                <div class="col-sm"><a href="https://www.docker.com/" target="_blank">
+                    <img style="height: 80px; width:120px" src="img/skills/docker.webp"></a>
+                </div>
+                <div class="col-sm"><a href="https://kubernetes.io/" target="_blank">
+                    <img style="height: 80px; width:120px" src="img/skills/kubernetes.png"></a>
+                </div>
+                <div class="col-sm"><a href="https://www.terraform.io/" target="_blank">
+                    <img style="height: 100px; width:140px" src="img/skills/terraform.png"></a>
+                </div>
+                <div class="col-sm"><a href="https://learn.microsoft.com/en-us/devops/what-is-devops" target="_blank">
+                    <img style="height: 100px; width:140px" src="img/skills/devops.png"></a>
+                </div>
+                <div class="col-sm"><a href="https://www.splunk.com/" target="_blank">
+                    <img style="height: 100px; width:130px" src="img/skills/splunk.jpg"></a>
+                </div>
+            </div>
+            <div class="row align-items-center mt-5">
+                <div class="col-sm"><a href="https://www.sqltutorial.org/" target="_blank">
+                    <img style="height: 100px; width:100px" src="img/skills/sql.png"></a>
+                </div>
+                <div class="col-sm"><a href="https://www.mongodb.com/" target="_blank">
+                    <img style="height: 100px; width:130px" src="img/skills/mongo.gif"></a>
+                </div>
+                <div class="col-sm"><a href="https://powerautomate.microsoft.com/" target="_blank">
+                    <img style="height: 100px; width:130px" src="img/skills/powerautomate.png"></a>
+                </div>
+                <div class="col-sm"><a href="https://github.com/" target="_blank">
+                    <img style="height: 100px; width:100px" src="img/skills/github.png"></a>
+                </div> 
+                <div class="col-sm"><a href="https://oauth.net/" target="_blank">
+                    <img style="height: 100px; width:100px" src="img/skills/oauth.png"></a>
+                </div>
+                <div class="col-sm"><a href="https://www.postman.com/" target="_blank">
+                    <img style="height: 80px; width:120px" src="img/skills/postman.webp"></a>
+                </div>   
+                <div class="col-sm"><a href="https://powerbi.microsoft.com/en-us/" target="_blank">
+                    <img style="height: 100px; width:130px" src="img/skills/powerbi.png"></a>
+                </div>             
+            </div>
+            <br><br><br>
+    </div>
+    <!-- Skill End -->
+
+
+    <!-- Project Start -->
+    <div class="container-fluid pt-5 pb-3" id="projects">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Projects</h1>
+            </div>
+            <div class="row portfolio-container">
+                <div class="row align-items-center">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <a href="https://github.com/chaitraboggaram/ReferUp" target="_blank"><img class="img-fluid rounded w-100" style="height: 250px" src="img/projects/ReferUp.jpg" alt=""></a>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-2.jpg" alt="Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Dylan Adams</h2>
-                                <h4>Web Developer</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
-                                </p>
-                                <div class="team-social">
-                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                    <center><p><a href="https://github.com/chaitraboggaram/ReferUp" target="_blank"><b>ReferUp</b></a></p></center>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <a href="https://github.com/chaitraboggaram/COT" target="_blank"><img class="img-fluid rounded w-100" style="height: 250px" src="img/projects/PlagiarismDetector.PNG" alt=""></a>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-3.jpg" alt="Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Jennifer Page</h2>
-                                <h4>Apps Designer</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
-                                </p>
-                                <div class="team-social">
-                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                    <center><p><a href="https://github.com/chaitraboggaram/COT" target="_blank"><b>Plagiarism Detector for ChatGPT</b></a></p></center>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <a href="https://github.com/chaitraboggaram/GiveForGood" target="_blank"><img class="img-fluid rounded w-100" style="height: 250px" src="img/projects/GiveForGood.png" alt=""></a>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-item">
-                            <div class="team-img">
-                                <img src="img/team-4.jpg" alt="Image">
-                            </div>
-                            <div class="team-text">
-                                <h2>Josh Dunn</h2>
-                                <h4>Apps Developer</h4>
-                                <p>
-                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
-                                </p>
-                                <div class="team-social">
-                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
+                    <center><p><a href="https://github.com/chaitraboggaram/GiveForGood" target="_blank"><b>Give For Good</b></a></p></center>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" style="height: 250px" src="img/projects/Blockchain.jpg" alt="">
+                    </div>
+                    <center><p style="color:#dc3545;"><b>Network Based Blockchain</b></p></center>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" style="height: 250px" src="img/projects/OrganDonation.png" alt="">
+                    </div>
+                    <center><p style="color:#dc3545;"><b>Organ Donation Foundation</b></p></center>
+                </div>
+            </div>
+            </div><br>
+            <center><u><a href="https://github.com/chaitraboggaram?tab=repositories" target="_blank">
+                <button style="background: #ff9800; border: 2px solid black;
+                  background-color: white;
+                  color: black;
+                  padding: 10px 28px;
+                  font-size: 16px;
+                  border-radius: 20px;
+                  cursor: pointer;"><i class="fab fa-github"></i>&nbsp;&nbsp;View my projects</button>
+                </a></u></center>
+        </div>
+    </div>
+    <!-- Project End -->
+
+
+    <!-- Activities & Interests Start -->
+    <div class="container-fluid py-5" id="activities">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Activities</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Activities & Interests</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="text-center">
+                            <img class="rounded-circle mx-auto" src="img/activities/tcsmaitree.jpg" style="width: 200px; height: 200px;">
+                            <h4 class="font-weight-light mb-3">Corporate Social Responsibility Spoc</h4>
+                            <h5 class="font-weight-bold mb-2"><a href="https://www.tcs.com/who-we-are/tcs-way/case-study/employee-health-wellness-tcs-wellbeing" target="_blank">TCS Presents</a></h5><span>Dec 2016 - Jun 2022</span><br>
+                            <h5 class="font-weight-light mt-3 mb-4">I have volunteered in various campaigns aimed at promoting child education and women's safety. In addition, I have participated in initiatives such as garbage yoga, donating approximately 1000 books to schools, and providing food and clothing donations to orphanages and old age homes.</h5>
                         </div>
+
+                        <div class="text-center">
+                            <img class="rounded-circle mx-auto" src="img/activities/ncc.png" style="width: 200px; height: 200px;">
+                            <h4 class="font-weight-light mb-3">Cadet</h4>
+                            <h5 class="font-weight-bold mb-2"><a href="https://indiancc.nic.in/" target="_blank">National Cadet Corps</a></h5><span>Jun 2011 - May 2013</span><br>
+                            <h5 class="font-weight-light mt-3 mb-4">I have volunteered at the Samarthanam Trust for the Disabled, an orphanage that provides care for physically challenged individuals. Additionally, I have contributed to temple security during festivals and volunteered for various physical activities such as walkathons and marathons. I have also participated in over 10 camps with the National Cadet Corps (NCC).</h5>
+                        </div>
+
+                        <div class="text-center">
+                            <img class="rounded-circle mx-auto" src="img/activities/ncc.png" style="width: 200px; height: 200px;">
+                            <h4 class="font-weight-light mb-3">Volunteer & Donor</h4>
+                            <h5 class="font-weight-bold mb-2"><a href="https://indiancc.nic.in/" target="_blank">National Cadet Corps</a></h5><span>Jun 2013 - May 2016</span><br>
+                            <h5 class="font-weight-light mt-3 mb-4">I have volunteered for various blood donation campaigns and organ donation awareness campaigns, and have actively participated in donating blood multiple times during these initiatives.</h5>
+                        </div>
+
+                        <div class="text-center">
+                            <img class="rounded-circle mx-auto mb-3" src="img/activities/bharat_scouts_and_guides.png" style="width: 160px; height: 160px;">
+                            <h4 class="font-weight-light mb-3">Guide Volunteer</h4>
+                            <h5 class="font-weight-bold mb-2"><a href="https://www.bsgindia.org/" target="_blank">Bharat Scouts and Guides</a></h5><span>Jun 2005 - May 2009</span><br>
+                            <h5 class="font-weight-light mt-3 mb-4">I have volunteered for fundraising efforts to support blind students, as well as assisted in writing exams on behalf of blind students under their guidance.</h5>
+                        </div>
+
+                        <!-- <div class="text-center">
+                            <img class="rounded-circle mx-auto mb-3" src="img/activities/tedxcrce.jpg" style="width: 160px; height: 160px;">
+                            <h4 class="font-weight-light mb-3">Public Relations and Media Head</h4>
+                            <h5 class="font-weight-bold mb-2"><a href="https://tedxcrce.com/" target="_blank">TEDxCRCE</a></h5><span>Jul 2019 - Aug 2020</span><br>
+                            <h5 class="font-weight-light mt-3 mb-4">Promoted TEDx events on online as well as offline platforms and conducted various community events in collaboration with Roti Bank Mumbai and other non-profit organizations.</h5>
+                        </div>
+                        <div class="text-center">
+                            <img class="rounded-circle mx-auto mb-3" src="img/activities/stuco.png" style="width: 160px; height: 160px;">
+                            <h4 class="font-weight-light mb-3">Ladies Representative</h4>
+                            <h5 class="font-weight-bold mb-2"><a href="https://stucocrce.com/" target="_blank">Students' Council CRCE</a></h5><span>Jul 2018 - Apr 2019</span><br>
+                            <h5 class="font-weight-light mt-3 mb-4">Part of the core team in organizing various college events and fests conducted in Fr. CRCE. My role also involved marketing and promotion of various events and fests.</h5>
+                        </div>
+                        <div class="text-center">
+                            <img class="rounded-circle mx-auto mb-3" src="img/activities/services.png" style="width: 200px; height: 200px;">
+                            <h4 class="font-weight-light mb-3">Community Services</h4>
+                            <p class="font-weight-light mt-3 mb-4">
+                                <ul>
+                                    <span><b>Roti Bank, Mumbai</b> <br>(Sept 2019 - March 2020) | <i>Poverty Alleviation, Social Service</i></span><br><br>
+                                    <span><b>Bigger Than Life NGO, Mumbai</b> <br>(Sept 2017 - March 2018) | <i>Children Education, Fund Raising</i></span><br><br>
+                                    <span><b>Fr. Agnel Ashram, Mumbai</b> <br>(Sept 2019 - Feb 2020) | <i>Children Education</i></span><br>
+                                </ul>
+                            </p>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Team End -->
-        
-        
-        <!-- Contact Start -->
-        <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-8">
-                            <div class="contact-form">
-                                <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+    </div>
+    <!-- Activities & Interests End -->
+
+
+    <!-- Youtube Videos Start -->
+    <!-- <div class="container-fluid pt-5" id="blog">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Youtube</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Videos</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-2">
+                        <iframe width="350" height="280" src="https://www.youtube.com/embed/VuOu_hXmPhg"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-2">
+                        <iframe width="350" height="280" src="https://www.youtube.com/embed/gC4bN111d3k"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="position-relative mb-2">
+                        <iframe width="350" height="280" src="https://www.youtube.com/embed/EOINkW6y3ws"></iframe>
                     </div>
                 </div>
             </div>
+            <center><u><a href="https://www.youtube.com/c/TheRegoSisters?sub_confirmation=1" target="_blank">
+              <button style="background: #ff9800; border: 2px solid black;
+                background-color: white;
+                color: black;
+                padding: 10px 28px;
+                font-size: 16px;
+                border-radius: 20px;
+                cursor: pointer;"><i class="fab fa-youtube"></i>&nbsp;&nbsp;Explore my Channel</button>
+              </a></u></center>
         </div>
-        <!-- Contact End -->
+    </div> -->
+    <!-- Youtube Videos End -->
 
-
-        <!-- Blog Start -->
-        <div class="blog" id="blog">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>From Blog</p>
-                    <h2>Latest Articles</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="blog-img">
-                                <img src="img/blog-1.jpg" alt="Blog">
-                            </div>
-                            <div class="blog-text">
-                                <h2>Lorem ipsum dolor sit amet</h2>
-                                <div class="blog-meta">
-                                    <p><i class="far fa-user"></i>Admin</p>
-                                    <p><i class="far fa-list-alt"></i>Web Design</p>
-                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
-                                    <p><i class="far fa-comments"></i>5</p>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi. Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare mattis nisl massa et eros vitae pulvin
-                                </p>
-                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="blog-img">
-                                <img src="img/blog-2.jpg" alt="Blog">
-                            </div>
-                            <div class="blog-text">
-                                <h2>Lorem ipsum dolor sit amet</h2>
-                                <div class="blog-meta">
-                                    <p><i class="far fa-user"></i>Admin</p>
-                                    <p><i class="far fa-list-alt"></i>Apps Design</p>
-                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
-                                    <p><i class="far fa-comments"></i>10</p>
-                                </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi. Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare mattis nisl massa et eros vitae pulvin
-                                </p>
-                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="container text-center py-5">
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/chaitraboggaram/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://github.com/chaitraboggaram/"><i class="fab fa-github"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://twitter.com/BoggaramChaitra"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.instagram.com/ipadhu/"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.youtube.com/@ipadhu"><i class="fab fa-youtube"></i></a>
             </div>
+            <!-- <p class="m-0"><a class="text-white">Made with &hearts; by </a><a class="text-white font-weight-bold" href="#">Chaitra Boggaram</a> -->
+            <p class="m-0">Made with &hearts; by <a class="text-white font-weight-bold" href="#">Chaitra Boggaram</a></p>
         </div>
-        <!-- Blog End -->
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 
-        <!-- Footer Start -->
-        <div class="footer wow fadeIn" data-wow-delay="0.3s">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="footer-info">
-                        <h2>Chaitra Boggaram</h2>
-                        <h3>Santa Clara, California, USA</h3>
-                        <div class="footer-menu">
-                            <p>+012 345 67890</p>
-                            <p>cboggaram@scu.edu</p>
-                        </div>
-                        <div class="footer-social">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href="https://github.com/chaitraboggaram"><i class="fab fa-github"></i></a>
-                            <a href=""><i class="fab fa-youtube"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/chaitraboggaram/"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="container copyright">
-                    <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved | 
-					
-					<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
-        
-        
-        <!-- Back to top button -->
-        <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
-        
-        
-        <!-- Pre Loader -->
-        <div id="loader" class="show">
-            <div class="loader"></div>
-        </div>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/isotope/isotope.pkgd.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        
-        <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
 
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
 </html>
